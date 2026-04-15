@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        /* Dashboard Layout */
+        .container {
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+        }
+
+        /* Recent Activity */
+        .activity {
+            margin-top: 30px;
+        }
+
+        .activity ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .activity li {
+            background: white;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Student Portal</h2>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="container">
+        <h1>Welcome, Student 👋</h1>
+
+        <!-- Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Subjects</h3>
+                <p>5 Enrolled</p>
+            </div>
+
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>2 Pending</p>
+            </div>
+
+            <div class="card">
+                <h3>Grades</h3>
+                <p>View Results</p>
+            </div>
+
+            <div class="card">
+                <h3>Notifications</h3>
+                <p>3 New</p>
+            </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>✔ Submitted Math Assignment</li>
+                <li>📢 New announcement from teacher</li>
+                <li>📝 Quiz scheduled tomorrow</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
